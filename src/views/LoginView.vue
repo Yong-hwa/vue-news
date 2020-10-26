@@ -45,7 +45,7 @@ export default {
         this.user = response.data;
         let list = await axios.get('https://jsonplaceholder.typicode.com/todos');
         console.log(list.data);
-        this.items = list.data
+        this.items = list.data;
       }
     }
   },
