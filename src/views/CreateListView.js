@@ -15,6 +15,6 @@ export default function createListView(name) {
     },
     render(createElement) {
       return createElement(ListView)
-    },
+    }
   }
 }
