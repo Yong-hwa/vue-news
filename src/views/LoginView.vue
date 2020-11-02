@@ -26,13 +26,13 @@ export default {
     loginUser() {
       axios.get('https://jsonplaceholder.typicode.com/users/1')
       .then(response => {
-        console.log(response.data);
+        // console.log(response.data);
         this.user = response.data;
         
         if (response.data.username === 'Bret') {
           axios.get('https://jsonplaceholder.typicode.com/todos')
           .then(response => {
-            console.log(response.data);
+            // console.log(response.data);
             this.items = response.data;
           })
         }
